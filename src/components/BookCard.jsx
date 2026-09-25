@@ -28,19 +28,21 @@ function BookCard({ book, onAdd, onRemove, isSaved = false }) {
         )}
 
         {isSaved ? (
-          <button
-            type="button"
-            className="remove-button"
-            onClick={() => onRemove(book)}
-          >
+         <button
+  type="button"
+  className="remove-button"
+  onClick={() => onRemove(book)}
+  aria-label={`Remove ${book.title} from reading list`}
+>
             Remove from reading list
           </button>
         ) : (
-          <button
-            type="button"
-            className="add-button"
-            onClick={() => onAdd(book)}
-          >
+         <button
+  type="button"
+  className="add-button"
+  onClick={() => onAdd(book)}
+  aria-label={`Add ${book.title} to reading list`}
+>
             Add to reading list
           </button>
         )}
