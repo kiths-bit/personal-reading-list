@@ -162,7 +162,7 @@ function clearDemoState() {
           </form>
         </section>
 
-        <section className="results-section">
+       <section className="results-section" aria-live="polite">
   <h2>Search Results</h2>
   {demoState === "loading" && <LoadingState />}
 
