@@ -35,3 +35,11 @@ Open a terminal in the project folder and run:
 
 ```bash
 npm install
+```
+How to use
+
+1. Search for a book using the search field.
+2. Add a book to your personal reading list.
+3. Open the reading list to view saved books.
+4. Remove a book when you no longer want to keep it.
+5. If the API request fails, the application displays an error state so you can try again.
